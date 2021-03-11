@@ -1,20 +1,25 @@
-# Dracula for [X](http://link-to-x.com)
+# Dracula for [Mainsail](https://docs.mainsail.xyz/)
 
-> A dark theme for [X](http://link-to-x.com).
+> A dark theme for [Mainsail](https://docs.mainsail.xyz/).
 
 ![Screenshot](./screenshot.png)
 
 ## Install
 
+### Install using Git
 All instructions can be found at [draculatheme.com/x](https://draculatheme.com/x).
+´´´
+$ git clone https://github.com/steadyjaw/dracula-mainsail-theme.git 
+$ cp -pr dracula-mainsail-theme/config/.theme ~/klipper_config/
+´´´
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/template/graphs/contributors).
+This theme is maintained by the following person
 
-[![Zeno Rocha](https://github.com/zenorocha.png?size=100)](https://github.com/zenorocha) |
+[![Steadyjaw](https://github.com/steadyjaw.png?size=100)](https://github.com/steadyjaw) |
 --- |
-[Zeno Rocha](https://github.com/zenorocha) |
+[Steadyjaw](https://github.com/https://github.com/steadyjaw) |
 
 ## License
 

@@ -1,0 +1,232 @@
+:root {
+/* DRACULA COLOR PALETTE*/
+    --Background: #282a36; 
+    --CurrentLine: #44475a;
+    --Foreground: #f8f8f2;
+    --ForegroundDarker: #f5f5f2;
+    --Comment: #6272a4;
+    --Cyan: #8be9fd;
+    --Green: #50fa7b;
+    --LightGreen: #8aff80;
+    --Orange: #ffb86c;
+    --Pink: #ff79c6;
+    --Purple: #bd93f9;
+    --UiPurple: #9580ff;
+    --Red: #ff5555;
+    --Yellow: #f1fa8c;
+    --Black: #000000;
+
+/* MAINSAIL COLORED ELEMENTS */
+    --Primary: #bd93f9 !important;
+    --DarkElements: var(--Comment) !important;
+    --BodyBackground: var(--Background) !important;
+    --FontColor: var(--Foreground);
+    --Warnings: var(--Orange) !important;
+    --Black: var(--Black) !important;
+    --Toolbar: var(--CurrentLine) !important;
+    --Sheets: var(--CurrentLine) !important;
+}
+
+body {
+    background-color: var(--CurrentLine);
+}
+.v-btn__content .v-toolbar__title {
+    color: var(--Foreground) !important;
+}
+.text--darken-2 {
+      color: var(--Foreground) !important;
+}
+.v-sheet {
+    /*background-color: var(--CurrentLine);*/
+    border-color: var(--CurrentLine);
+    #color: var(--Foreground);
+}
+/* Make Primary Purple! */
+.v-application .primary {
+    background-color: var(--Purple) !important;
+    border-color: var(--Purple) !important;
+}
+.v-application .primary--text {
+    color: var(--Purple) !important;
+    caret-color: var(--Purple) !important;
+}
+.v-application .blue--text {
+    color: var(--Purple) !important;
+    caret-color: var(--Purple) !important;
+}
+.v-application .info {
+    background-color: var(--Purple) !important;
+    border-color: var(--Purple) !important;
+}
+
+/* Background Color */
+.theme--dark.v-application {
+    background: var(--Background);
+    color: var(--Foreground);
+}
+/* Sheets - such as "Controls" or "Temperatures */
+.theme--dark.v-sheet {
+    background-color: var(--Sheets);
+}
+.v-toolbar__content, .v-toolbar__extension {
+    background-color: var(--Toolbar);
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+}
+/* The Icons
+.mdi-set, .mdi:before {
+    color: var(--Foreground);
+} */
+
+/* Grey darkend */
+.v-application .grey.darken-3 {
+    background-color: var(--Background) !important;
+    border-color: var(--Background) !important;
+}
+.theme--dark.v-text-field--solo>.v-input__control>.v-input__slot {
+    background: var(--Background) !important;
+}
+.theme--dark.v-data-table {
+    background-color: var(--Background) !important;
+}
+.v-data-table>.v-data-table__wrapper>table  {
+    background-color: var(--Background) !important;
+}
+.theme--dark.v-card {
+    /*background-color: var(--Background);*/
+}
+.theme--dark.v-btn.v-btn--has-bg {
+    background-color: var(--Background);
+}
+/* vCard adn subtitle Text Color */
+.theme--dark.v-card .v-card__subtitle, .theme--dark.v-card>.v-card__text {
+    color: var(--ForegroundDarker);
+}
+
+/* GREEN Stuff */
+.v-application .green--text {
+    color: var(--Green) !important;
+    caret-color: var(--Green) !important;
+}
+.v-application .green {
+    background-color: var(--Green) !important;
+    border-color: var(--Green) !important;
+}
+.v-application .green--text.text--darken-1 {
+    color: var(--Green) !important;
+    caret-color: var(--Green) !important;
+}
+.v-toast__item--success{
+    background-color: var(--Green) !important;
+    color: #000 !important;
+}
+
+/* ORANGE Stuff */
+.v-application button.warning {
+    background: var(--Orange) !important;
+    background-color: var(--Warnings);Orange) !important;
+    border-color: var(--Warnings);Orange) !important;
+}
+.theme--dark.warning--text {
+    color: var(--Orange) !important;
+}
+.v-toast__item--warning{
+    background-color: var(--Orange) !important;
+}
+
+/* RED Stuff */
+.v-application .red {
+    background-color: var(--Red) !important;
+    border-color: var(--Red) !important;
+}
+.v-application .red--text.text--darken-1 {
+    color: var(--Red) !important;
+    caret-color: var(--Red) !important;
+}
+.v-application .red--text {
+    color: var(--Red) !important;
+    caret-color: var(--Red) !important;
+}
+.v-application .error {
+    background-color: var(--Red) !important;
+    border-color: var(--Red) !important;
+}
+.v-toast__item--error{
+    background-color: var(--Red) !important;
+}
+
+
+
+/* CHANGE ICONS!! ;) */
+/* Thermmometer to Flask */
+.mdi-thermometer-lines:before {
+    content: "\F0828";
+}
+/* Heatbed to Flames */
+.mdi-radiator-disabled:before {
+    content: "\F0238";
+    color: var(--Foreground);
+}
+/* Nozzle to Saw */
+.mdi-printer-3d-nozzle:before {
+    content: "\F0E22";
+    color: var(--Foreground);
+}
+/* Snowflake to Reactory */
+.mdi-snowflake:before {
+    content: "\F0708";
+}
+/* Controls to Infected Hand */
+.mdi-gamepad:before {
+    content: "\F1258";
+}
+/* Home to Castle */
+.mdi-home:before {
+    content: "\F011A";
+}
+/* "Cog"/Gearwheel to SPider */
+.mdi-cog:before {
+    content: "\F11EA";
+}
+/* Dipswitch to Bloodbag */
+.mdi-dip-switch:before {
+    content: "\F0CEC";
+}
+/* Code-Tags to Spider-web */
+.mdi-code-tags:before {
+    content: "\F0BCA";
+}
+/* Information to Thunderbolt */
+.mdi-information:before {
+    content: "\F140C";
+}
+/* Fan to Knife */
+.mdi-fan:before {
+    content: "\F09FB";
+}
+/* Connection to magnet */
+.mdi-connection:before {
+    content: "\F0348";
+}
+
+
+
+/* MDI
+mdi-bat: F0B5F
+mdi-knifei: F09FB
+mdi-blood-bag: F0CEC
+mdi-castle: F011A
+mdi-fire: F0238
+mdi-flask-outline: F0096
+mdi-flask-round-bottom: F124B
+mdi-allergy: F1258
+mdi-circular-saw: F0E22
+mdi-cigar: F1189
+mdi-hot-tub: F0828
+mdi-react: F0708
+mdi-spider-thread: F11EB
+mdi-spider-web: F0BCA
+mdi-spider: F11EA
+mdi-lightning-bolt-outline: F140C
+mdi-magnet-on: F0348
+*/
+
