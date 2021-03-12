@@ -1,108 +1,136 @@
+/*
+This is a dark theme for mainsail.
+It is inspired by the DRACULA theme.
+
+Website:        https://draculatheme.com
+GitHub:         https://github.com/dracula
+
+DRACULA COLOR PALETTE
+    Background:  #282a36;
+    CurrentLine: #44475a;
+    Foreground:  #f8f8f2;
+    Comment:     #6272a4;
+    Cyan:        #8be9fd;
+    Green:       #50fa7b;
+    LightGreen:  #8aff80;
+    Orange:      #ffb86c;
+    Pink:        #ff79c6;
+    Purple:      #bd93f9;
+    Red:         #ff5555;
+    Yellow:      #f1fa8c;
+*/
+
 :root {
-/* DRACULA COLOR PALETTE*/
-    --Background: #282a36; 
-    --CurrentLine: #44475a;
-    --Foreground: #f8f8f2;
-    --ForegroundDarker: #f5f5f2;
-    --Comment: #6272a4;
-    --Cyan: #8be9fd;
-    --Green: #50fa7b;
-    --LightGreen: #8aff80;
-    --Orange: #ffb86c;
-    --Pink: #ff79c6;
-    --Purple: #bd93f9;
-    --UiPurple: #9580ff;
-    --Red: #ff5555;
-    --Yellow: #f1fa8c;
-    --Black: #000000;
-
-/* MAINSAIL COLORED ELEMENTS */
-    --Primary: #bd93f9 !important;
-    --DarkElements: var(--Comment) !important;
-    --BodyBackground: var(--Background) !important;
-    --FontColor: var(--Foreground);
-    --Warnings: var(--Orange) !important;
-    --Black: var(--Black) !important;
-    --Toolbar: var(--CurrentLine) !important;
-    --Sheets: var(--CurrentLine) !important;
+    --Primary:        #bd93f9;    /*Dracula:Purple*/
+    --Green:          #50fa7b;    /*Dracula:Green*/
+    --Red:            #ff5555;    /*Dracula:Red*/
+    --Warnings:       #ffb86c;    /*Dracula:Orange*/
+    --Text:           #f8f8f2;    /*Dracula:Foreground*/
+    --DarkerText:     #f5f5f2;    
+    --Background:     #44475a;    /*Dracula:CurrentLine*/
+    --DarkBackground: #282a36;    /*Dracula:Background*/
+    --Toolbars:       #44475a;    /*Dracula:CurrentLine*/
+    --Sheets:         #282a36;    /*Dracula:Background*/
 }
 
-body {
-    background-color: var(--CurrentLine);
-}
+
+/* Change Color of text */
 .v-btn__content .v-toolbar__title {
-    color: var(--Foreground) !important;
+    color: var(--Text) !important;
 }
 .text--darken-2 {
-      color: var(--Foreground) !important;
-}
-.v-sheet {
-    /*background-color: var(--CurrentLine);*/
-    border-color: var(--CurrentLine);
-    #color: var(--Foreground);
-}
-/* Make Primary Purple! */
-.v-application .primary {
-    background-color: var(--Purple) !important;
-    border-color: var(--Purple) !important;
-}
-.v-application .primary--text {
-    color: var(--Purple) !important;
-    caret-color: var(--Purple) !important;
-}
-.v-application .blue--text {
-    color: var(--Purple) !important;
-    caret-color: var(--Purple) !important;
-}
-.v-application .info {
-    background-color: var(--Purple) !important;
-    border-color: var(--Purple) !important;
+    color: var(--Text) !important;
 }
 
-/* Background Color */
-.theme--dark.v-application {
-    background: var(--Background);
-    color: var(--Foreground);
+
+/* Change Primary color */
+.v-application .primary {
+    background-color: var(--Primary) !important;
+    border-color: var(--Primary) !important;
 }
+.v-application .primary--text {
+    color: var(--Primary) !important;
+    caret-color: var(--Primary) !important;
+}
+.v-application .blue--text {
+    color: var(--Primary) !important;
+    caret-color: var(--Primary) !important;
+}
+.v-application .info {
+    background-color: var(--Primary) !important;
+    border-color: var(--Primary) !important;
+}
+.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot:focus-within {
+    border: thin solid var(--Primary) !important;
+}
+.v-text-field.v-text-field--solo .v-input__control input {
+    caret-color: var(--Primary);
+}
+.theme--dark.v-color-picker .v-color-picker__input input {
+    border: thin solid var(--Primary);
+    color: var(--Text);
+}
+
+
+/* Change Background and Toolbars */
+body {
+    background-color: var(--Background);
+}
+.v-sheet {
+    border-color: var(--Background);
+}
+
+
+/* Darkest Color / Grey darkend */
+
+.theme--dark.v-application {
+    background: var(--DarkBackground);
+    color: var(--Text);
+}
+.v-application .grey.darken-3 {
+    background-color: var(--DarkBackground) !important;
+    border-color: var(--DarkBackground) !important;
+}
+.theme--dark.v-text-field--solo>.v-input__control>.v-input__slot {
+    background: var(--DarkBackground) !important;
+}
+.theme--dark.v-data-table {
+    background-color: var(--DarkBackground) !important;
+}
+.v-data-table>.v-data-table__wrapper>table  {
+    background-color: var(--DarkBackground) !important;
+}
+.theme--dark.v-card {
+    /*background-color: var(--DarkBackground);*/
+}
+.theme--dark.v-btn.v-btn--has-bg {
+    background-color: var(--DarkBackground);
+}
+
+
 /* Sheets - such as "Controls" or "Temperatures */
 .theme--dark.v-sheet {
     background-color: var(--Sheets);
 }
 .v-toolbar__content, .v-toolbar__extension {
-    background-color: var(--Toolbar);
+    background-color: var(--Toolbars);
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
 }
+
+
 /* The Icons
 .mdi-set, .mdi:before {
-    color: var(--Foreground);
-} */
+    color: var(--Text);
+}
+*/
 
-/* Grey darkend */
-.v-application .grey.darken-3 {
-    background-color: var(--Background) !important;
-    border-color: var(--Background) !important;
-}
-.theme--dark.v-text-field--solo>.v-input__control>.v-input__slot {
-    background: var(--Background) !important;
-}
-.theme--dark.v-data-table {
-    background-color: var(--Background) !important;
-}
-.v-data-table>.v-data-table__wrapper>table  {
-    background-color: var(--Background) !important;
-}
-.theme--dark.v-card {
-    /*background-color: var(--Background);*/
-}
-.theme--dark.v-btn.v-btn--has-bg {
-    background-color: var(--Background);
-}
-/* vCard adn subtitle Text Color */
+
+/* vCard and subtitle Text Color */
 .theme--dark.v-card .v-card__subtitle, .theme--dark.v-card>.v-card__text {
-    color: var(--ForegroundDarker);
+    color: var(--DarkerText);
 }
 
-/* GREEN Stuff */
+/* green elements */
 .v-application .green--text {
     color: var(--Green) !important;
     caret-color: var(--Green) !important;
@@ -120,20 +148,26 @@ body {
     color: #000 !important;
 }
 
-/* ORANGE Stuff */
+
+/* warnings and orange elements */
 .v-application button.warning {
-    background: var(--Orange) !important;
+    background: var(--Warnings) !important;
     background-color: var(--Warnings);Orange) !important;
     border-color: var(--Warnings);Orange) !important;
 }
 .theme--dark.warning--text {
-    color: var(--Orange) !important;
+    color: var(--Warnings) !important;
 }
 .v-toast__item--warning{
-    background-color: var(--Orange) !important;
+    background-color: var(--Warnings) !important;
+}
+.v-application .orange {
+    background: var(--Warnings) !important;
+    background-color: var(--Warnings);Orange) !important;
 }
 
-/* RED Stuff */
+
+/* red elements */
 .v-application .red {
     background-color: var(--Red) !important;
     border-color: var(--Red) !important;
@@ -155,9 +189,12 @@ body {
 }
 
 
+/*
+    CHANGE content of icons
+    Material Desgin Icons can be found on https://pictogrammers.github.io/@mdi/font/5.2.45/
+*/
 
-/* CHANGE ICONS!! ;) */
-/* Thermmometer to Flask */
+/* Thermometer to Flask */
 .mdi-thermometer-lines:before {
     content: "\F0828";
 }
@@ -183,7 +220,7 @@ body {
 .mdi-home:before {
     content: "\F011A";
 }
-/* "Cog"/Gearwheel to SPider */
+/* "Cog"/Gearwheel to Spider */
 .mdi-cog:before {
     content: "\F11EA";
 }
@@ -209,7 +246,6 @@ body {
 }
 
 
-
 /* MDI
 mdi-bat: F0B5F
 mdi-knifei: F09FB
@@ -229,4 +265,3 @@ mdi-spider: F11EA
 mdi-lightning-bolt-outline: F140C
 mdi-magnet-on: F0348
 */
-
