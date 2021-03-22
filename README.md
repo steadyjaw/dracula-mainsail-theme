@@ -10,7 +10,7 @@
 
 ```
 $ git clone https://github.com/steadyjaw/dracula-mainsail-theme.git
-$ cp -pr dracula-mainsail-theme/config/.theme ~/klipper_config/
+$ cp -pr dracula-mainsail-theme ~/klipper_config/.theme
 ```
 
 ## License
