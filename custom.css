@@ -22,6 +22,7 @@ DRACULA COLOR PALETTE
 
 :root {
     --Primary:        #bd93f9;    /*Dracula:Purple*/
+    --Secondary:      #44475a;    /*Dracula:CurrentLine*/
     --Green:          #50fa7b;    /*Dracula:Green*/
     --Red:            #ff5555;    /*Dracula:Red*/
     --Warnings:       #ffb86c;    /*Dracula:Orange*/
@@ -39,6 +40,15 @@ DRACULA COLOR PALETTE
     color: var(--Text) !important;
 }
 .text--darken-2 {
+    color: var(--Text) !important;
+}
+.subheading {
+    color: var(--Text) !important;
+}
+.theme--dark.v-icon, .v-btn__content, .v-text-field__suffix {
+    color: var(--Text) !important;
+}
+.theme--dark.v-input, .theme--dark.v-input input, .theme--dark.v-input textarea {
     color: var(--Text) !important;
 }
 
@@ -70,6 +80,18 @@ DRACULA COLOR PALETTE
     border: thin solid var(--Primary);
     color: var(--Text);
 }
+
+
+/* Change Secondary color */
+.v-application .secondary {
+    background-color: var(--Secondary) !important;
+    border-color: var(--Secondary) !important;
+}
+.theme--dark.v-chip {
+    color: var(--Text) !important;
+    background-color: var(--Secondary) !important;
+}
+
 
 
 /* Change Background and Toolbars */
