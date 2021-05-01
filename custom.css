@@ -266,7 +266,18 @@ body {
 .mdi-connection:before {
     content: "\F0348";
 }
-
+/*Statistics to snake */ 
+.mdi-chart-areaspline:before {
+    content: "\F150E";
+}
+/* history to sparklies */
+.mdi-history:before {
+    content: "\F1545";
+}
+/* gcode-files */
+.mdi-file-document-multiple-outline:before {
+    content: "\F0E22";
+}
 
 /* MDI
 mdi-bat: F0B5F
@@ -286,4 +297,5 @@ mdi-spider-web: F0BCA
 mdi-spider: F11EA
 mdi-lightning-bolt-outline: F140C
 mdi-magnet-on: F0348
+mdi-snake: F150E
 */
