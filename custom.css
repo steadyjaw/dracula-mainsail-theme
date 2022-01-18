@@ -33,6 +33,14 @@ DRACULA COLOR PALETTE
     --Toolbars:       #44475a;    /*Dracula:CurrentLine*/
     --Sheets:         #282a36;    /*Dracula:Background*/
 }
+.v-application {
+    --v-primary-base: var(--Primary) !important;
+    --v-anchor-base:  var(--Primary) !important;
+    --v-error-base:   var(--Red) !important;
+    --v-success-base: var(--Green) !important;
+    --v-warning-base: var(--Warnings) !important;
+    --v-panel-base:   var(--DarkBackground) !important;
+}
 
 
 /* Change Color of text */
@@ -93,7 +101,6 @@ DRACULA COLOR PALETTE
 }
 
 
-
 /* Change Background and Toolbars */
 body {
     background-color: var(--Background);
@@ -122,10 +129,10 @@ body {
 .v-data-table>.v-data-table__wrapper>table  {
     background-color: var(--DarkBackground) !important;
 }
-.theme--dark.v-card {
-    /*background-color: var(--DarkBackground);*/
-}
 .theme--dark.v-btn.v-btn--has-bg {
+    background-color: var(--DarkBackground);
+}
+.theme--dark.v-tabs>.v-tabs-bar {
     background-color: var(--DarkBackground);
 }
 
@@ -140,17 +147,11 @@ body {
 }
 
 
-/* The Icons
-.mdi-set, .mdi:before {
-    color: var(--Text);
-}
-*/
-
-
 /* vCard and subtitle Text Color */
 .theme--dark.v-card .v-card__subtitle, .theme--dark.v-card>.v-card__text {
     color: var(--DarkerText);
 }
+
 
 /* green elements */
 .v-application .green--text {
@@ -174,8 +175,8 @@ body {
 /* warnings and orange elements */
 .v-application button.warning {
     background: var(--Warnings) !important;
-    background-color: var(--Warnings);Orange) !important;
-    border-color: var(--Warnings);Orange) !important;
+    background-color: var(--Warnings) !important;
+    border-color: var(--Warnings) !important;
 }
 .theme--dark.warning--text {
     color: var(--Warnings) !important;
@@ -185,7 +186,7 @@ body {
 }
 .v-application .orange {
     background: var(--Warnings) !important;
-    background-color: var(--Warnings);Orange) !important;
+    background-color: var(--Warnings) !important;
 }
 
 
@@ -210,6 +211,21 @@ body {
     background-color: var(--Red) !important;
 }
 
+/* Buttons */
+.v-btn-toggle>.v-btn.v-btn {
+    opacity: 1;
+}
+.theme--dark.v-btn--active:before {
+    opacity: 1;
+    background-color: var(--Toolbars) !important;
+}
+.theme--dark.v-btn.v-btn--disabled.v-btn--has-bg {
+    opacity: 1;
+    background-color: var(--Toolbars) !important;
+}
+.v-btn--disabled span.v-btn__content {
+    color: hsla(0,0%,100%,.3)!important
+}
 
 /*
     CHANGE content of icons
@@ -223,12 +239,12 @@ body {
 /* Heatbed to Flames */
 .mdi-radiator-disabled:before {
     content: "\F0238";
-    color: var(--Foreground);
+    color: var(--Text);
 }
 /* Nozzle to Saw */
 .mdi-printer-3d-nozzle:before {
     content: "\F0E22";
-    color: var(--Foreground);
+    color: var(--Text);
 }
 /* Snowflake to Reactory */
 .mdi-snowflake:before {
@@ -281,7 +297,7 @@ body {
 
 /* MDI
 mdi-bat: F0B5F
-mdi-knifei: F09FB
+mdi-knife: F09FB
 mdi-blood-bag: F0CEC
 mdi-castle: F011A
 mdi-fire: F0238
@@ -298,4 +314,5 @@ mdi-spider: F11EA
 mdi-lightning-bolt-outline: F140C
 mdi-magnet-on: F0348
 mdi-snake: F150E
+mdi-bone: F00B9
 */
