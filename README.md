@@ -1,6 +1,6 @@
 # Dracula for [Mainsail](https://docs.mainsail.xyz/)
 
-> A dark theme for [Mainsail](https://github.com/mainsail-crew/mainsail)
+> A dark theme for [Mainsail](https://github.com/mainsail-crew/mainsail) based on the [Dracula Themev]|(https://draculatheme.com)
 
 ![Screenshot](./screenshot.png)
 
