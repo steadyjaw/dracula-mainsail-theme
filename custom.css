@@ -135,6 +135,9 @@ body {
 .theme--dark.v-tabs>.v-tabs-bar {
     background-color: var(--DarkBackground);
 }
+.theme--dark.v-window>.v-window__container {
+    background-color: var(--DarkBackground);
+}
 
 
 /* Sheets - such as "Controls" or "Temperatures */
